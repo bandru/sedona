@@ -1,0 +1,216 @@
+body {
+    position: relative;
+    min-width: 768px;
+    /*max-width: 768px;*/
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    /*regular 400; medium 500; bold 700*/
+    color: #000000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    position: relative;
+}
+
+.navigation-left {
+    display: block;
+    float: left;
+    margin-left: 6%;
+    width: 40%;
+}
+
+.navigation-right {
+    display: block;
+    float: right;
+    margin-right: 6%;
+    width: 40%;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.navigation-right li {
+    text-align: right;
+}
+
+nav a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.intro {
+    position: relative;
+    padding: 26px 0 30px 0;
+    background: url("../img/sedona-background.jpg") no-repeat #ddedf5;
+    background-size: 100%;
+}
+
+.intro img {
+    display: block;
+    margin: 40px auto;
+}
+
+.description {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.double-column {
+    float: left;
+    width: 67%;
+    height: 256px;
+}
+
+.argument-one .double-column {
+    background: url("../img/arg1.jpg") 50% 50% no-repeat #ddedf5;
+    background-size: 100%;
+}
+
+.argument-three .double-column {
+    background: url("../img/arg2.jpg") 50% 50% no-repeat #ddedf5;
+    background-size: 100%;
+}
+
+.argument-two .column::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+}
+
+.argument-two .column:nth-child(1)::before {
+    width: 75px;
+    height: 72px;
+    background-position: -125px -37px;
+}
+
+.argument-two .column:nth-child(2)::before {
+    width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+
+.argument-two .column:nth-child(3)::before {
+    width: 64px;
+    height: 76px;
+    background-position: -210px -80px;
+}
+
+.search {
+    text-align: center;
+}
+
+.map {
+    min-height: 748px;
+    background: url("../img/map.jpg") no-repeat #f2f1ef;
+    background-size: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    opacity: 0.9;
+}
+
+.filter {
+    padding: 0 6%;
+    background: url("../img/filter-background.jpg") no-repeat 50% 50% #ddedf5;
+    background-size: 100%;
+}
+
+.infrastructure, .housing, .found {
+    float: left;
+}
+
+.cost, .up-down {
+    float: right;
+}
+
+.sort {
+    margin: 0 6%;
+}
+
+.attr {
+    margin: 0 auto;
+    width: 380px;
+}
+
+.up-down {
+    position: relative;
+}
+
+.up {
+  display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.5px 10px 5.5px;
+    border-color: transparent transparent #000000 transparent;
+}
+
+.down {
+  display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5.5px 0 5.5px;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.house {
+  position: relative;
+  padding: 0 6%;
+}
+
+.house img {
+  float: left;
+  margin-right: 31px;
+}
+
+.rating {
+  float: right;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  height: 100px;
+  background-color: #ffffff;
+}
